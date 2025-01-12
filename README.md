@@ -1,6 +1,6 @@
-# Chall - Your Challenge Title
+# Chall - Jean Guillaume Auguste Victor
 
-> A brief description of the challenge
+> A reverse engineering challenge for beginners. Try to crack that weird password checker.
 
 ## Type
 
@@ -9,30 +9,15 @@
 
 ## Designer(s)
 
-- Ada Lovelace
-- Barbara Liskov
+- Hugo Kermabon-Bobinnec
 
 ## Description
 
-A high-level overview intended to clarify the concept and intuition behind the challenge, outlining its educational
-goals and the skills it aims to test in participants.
-
-**IMPORTANT:** This description will **NOT** be shared with participants.
+In this challenge, participants are given the binary of a password checker. The password checker implements a weird check, based on a system of equations. Participants must extract these equations from the binary code, solve the system, and find the password. The application is exposed online so that participants can input the correct password and get the flag (stored in a file).
 
 ## Category(ies)
 
-- `pwn`
 - `re`
-- `web`
-- `stegano`
-- `env`
-- `crypto`
-- `osint`
-- `web3`
-- `ai`
-- `android`
-- `auto`
-- `misc`
 
 ---
 

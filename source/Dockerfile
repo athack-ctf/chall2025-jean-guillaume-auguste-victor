@@ -1,33 +1,14 @@
-#########################################################################################################################
-# TODO: REPLACE THE CONTENT OF THIS FILE WITH YOUR OWN.
-#########################################################################################################################
+FROM alpine:3.19
 
-# Use the official Python base image
-FROM python:3.10-slim
+RUN apk add --no-cache gcc musl-dev make
 
-# Set the working directory
-WORKDIR /chall
+COPY ./src /app
 
-# Installing Flask
-RUN pip install Flask
+WORKDIR /app
 
-# Create the example chall (chall.py)
-RUN echo "from flask import Flask\n\
-chall = Flask(__name__)\n\
-\n\
-@chall.route('/')\n\
-def hello():\n\
-    return 'Hello @Hack 2025!'\n\
-\n\
-if __name__ == '__main__':\n\
-    chall.run(host='0.0.0.0')" > chall.py
+RUN make
 
-# Set environment vars
-ENV FLASK_APP=chall.py
-ENV FLASK_RUN_PORT=2025
-
-# Expose the port that the chall will run on
 EXPOSE 2025
 
-# Run the chall
-CMD ["flask", "run", "--host=0.0.0.0"]
+# Command to run the server
+CMD ["./main"]
