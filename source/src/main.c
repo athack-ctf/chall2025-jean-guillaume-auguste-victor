@@ -27,8 +27,11 @@ void show_flag(int client_socket) {
 void handle_client(int client_socket) {
     char b[BUFFER_SIZE];
 
+    char question[] = "Good evening Ned. Did you do what I asked you to do?\n";
+    send(client_socket, question, sizeof(question), 0);
 
-    send(client_socket, "Type in the password.\n", 22, 0);
+    char passquestion[] = "Hold on... before you say anything... what's the password?\n";
+    send(client_socket, passquestion, sizeof(passquestion), 0);
 
 
     // Receive password from client
@@ -52,7 +55,9 @@ void handle_client(int client_socket) {
         }        
     } else {
         // Incorrect password
-        send(client_socket, "Access denied.\n", 15, 0);
+        char denied[] = "... is that you, Roger? Get out of here.\n";
+        send(client_socket, denied, sizeof(denied), 0);
+        sleep(1);
     }
 
     // Close the connection

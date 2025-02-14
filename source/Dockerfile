@@ -1,10 +1,10 @@
 FROM alpine:3.19
 
+WORKDIR /chall
+
 RUN apk add --no-cache gcc musl-dev make
 
-COPY ./src /app
-
-WORKDIR /app
+COPY ./src /chall
 
 RUN make
 
