@@ -1,0 +1,27 @@
+name: "Jean Guillaume Auguste Victor"
+author: "Hugo"
+category: RE
+description: |
+    - Nobody's gonna know. Nobody's gonna know...
+    - They're gonna know.
+    - How would they know? How would they know??
+    - They're gonna know!
+    
+value: 150
+
+type: standard
+
+flags:
+  - type: "static"
+    content: "ATHACKCTF{lin3arSyst3mSRock!}"
+    data: "case_insensitive"
+
+tags:
+ - http
+
+files:
+    - ./offline-artifacts/main
+
+state: visible
+
+version: "0.1"
