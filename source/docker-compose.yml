@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  chall2025-jean-guillaume-auguste-victor:
+  jean-guillaume-auguste-victor:
     build: .
     image: athack-ctf/chall2025-jean-guillaume-auguste-victor
     ports:
