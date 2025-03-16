@@ -1,8 +1,7 @@
-version: '3.8'
-
 services:
   jean-guillaume-auguste-victor:
     build: .
     image: athack-ctf/chall2025-jean-guillaume-auguste-victor:latest
     ports:
-      - "2025:2025"
+    - 52033:2025
+version: '3.8'
