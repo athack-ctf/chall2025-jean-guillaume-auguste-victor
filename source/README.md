@@ -8,3 +8,8 @@
 
 - To Dockerize: `docker build .`
 
+## Using docker compose
+```
+docker compose up
+```
+
