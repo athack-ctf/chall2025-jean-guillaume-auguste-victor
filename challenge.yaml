@@ -17,7 +17,7 @@ flags:
     data: "case_insensitive"
 
 tags:
- - http
+ - tcp
 
 files:
     - ./offline-artifacts/main
