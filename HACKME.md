@@ -1,4 +1,0 @@
-- Nobody's gonna know. Nobody's gonna know...
-- They're gonna know.
-- How would they know? How would they know??
-- They're gonna know!
